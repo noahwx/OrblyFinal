@@ -1,0 +1,446 @@
+.Post {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    padding: 1em;
+    width: 100%;
+    min-height: 50px;
+    max-height: 250px;
+    border-bottom: var(--_border);
+    background-color: var(--_post-background);
+    overflow: hidden;
+}
+
+.Post-w-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    padding: 1em;
+    width: 100%;
+    min-height: 50px;
+    max-height: 1000px;
+    border-bottom: var(--_border);
+    background-color: var(--_post-background);
+    overflow: hidden;
+}
+
+.Post-w-GIF {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    padding: 1em;
+    width: 100%;
+    min-height: 50px;
+    max-height: 1000px;
+    border-bottom: var(--_border);
+    background-color: var(--_post-background);
+    overflow: hidden;
+}
+
+.Post-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 2.5em;
+}
+
+.Post-header-avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 2em;
+    padding-right: 0.2em;
+}
+
+.Post-header-avatar-image {
+    position: relative;
+    z-index: 1;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: var(--_grey);
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-header-avatar-image:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.Post-header-important-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 100%;
+    color: var(--_text);
+}
+
+.Post-header-fullName {
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--_text);
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-header-fullName:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Post-header-username-at {
+    position: relative;
+    z-index: 1;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--_placeholder);
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-header-username-at:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.Post-header-date {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--_placeholder);
+}
+
+.Post-header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0.2em;
+    right: 0.2em;
+    width: 100%;
+    height: 2em;
+    padding-right: 1em;
+}
+
+.Post-header-menu-image {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.2em;
+    padding: 0.2em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-header-menu-image:hover {
+    background: var(--_tertiary)
+}
+
+.Post-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    height: 100%;
+    margin-left: 4.2em;
+    padding-bottom: 1em;
+}
+
+.Post-body-text {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--_text);
+}
+
+.Post-body-image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 0.5em;
+    border-radius: 0.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-body-image-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-body-image-content:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(0.99);
+}
+
+.Post-body-gif {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 0.5em;
+    border-radius: 0.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-body-gif-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-body-gif-content:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(0.99);
+}
+
+.Post-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 1em;
+    width: 100%;
+    height: 2em;
+    padding-top: 0.2em;
+}
+
+.Post-actions-like {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10%;
+    height: 2em;
+    padding: 0.5em;
+}
+
+.Post-actions-like-image {
+    position: relative;
+    top: -0.1em;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.2em;
+    padding: 0.2em;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-actions-like:hover {
+    cursor: pointer;
+}
+
+.Post-actions-like:hover .Post-actions-like-image {
+    background: var(--_red);
+    transform: scale(1.1);
+}
+
+.Post-actions-like-text {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--_text);
+}
+
+.Post-actions-comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10%;
+    height: 2em;
+    padding: 0.5em;
+}
+
+.Post-actions-comment-image {
+    position: relative;
+    top: -0.1em;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.2em;
+    padding: 0.2em;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-actions-comment:hover {
+    cursor: pointer;
+}
+
+.Post-actions-comment:hover .Post-actions-comment-image {
+    background: var(--_primary);
+    transform: scale(1.1);
+}
+
+.Post-actions-comment-text {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--_text);
+}
+
+.Post-actions-repost {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10%;
+    height: 2em;
+    padding: 0.2em;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-actions-repost-image {
+    position: relative;
+    top: -0.1em;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.2em;
+    padding: 0.2em;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-actions-repost:hover {
+    cursor: pointer;
+}
+
+.Post-actions-repost:hover .Post-actions-repost-image {
+    background: var(--_primary);
+    transform: scale(1.1);
+}
+
+.Post-actions-repost-text {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--_text);
+}
+
+.Post-actions-seen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10%;
+    height: 2em;
+    padding: 0.5em;
+}
+
+.Post-actions-seen-image {
+    position: relative;
+    top: -0.1em;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.2em;
+    padding: 0.2em;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-actions-seen:hover {
+    cursor: pointer;
+}
+
+.Post-actions-seen:hover .Post-actions-seen-image {
+    background: var(--_primary);
+    transform: scale(1.1);
+}
+
+.Post-actions-seen-text {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--_text);
+}
+
+.Post-actions-share {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 10%;
+    height: 2em;
+    padding: 0.5em;
+}
+
+.Post-actions-share-image {
+    position: relative;
+    top: -0.1em;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.2em;
+    padding: 0.2em;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.Post-actions-share:hover {
+    cursor: pointer;
+}
+
+.Post-actions-share:hover .Post-actions-share-image {
+    background: var(--_primary);
+    transform: scale(1.1);
+}
+
+.Post-body-text-content-hashtag {
+    color: var(--_text);
+    font-size: 0.9em;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.05s ease-in-out;
+}
+
+.Post-body-text-content-hashtag:hover {
+    color: var(--_tertiary);
+    text-decoration: underline;
+}
+
+.Post-body-text-content-mention {
+    color: var(--_text);
+    font-size: 0.9em;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.05s ease-in-out;
+}
+
+.Post-body-text-content-mention:hover {
+    color: var(--_tertiary);
+    text-decoration: underline;
+}
+
+.Post-body-text-content-link {
+    color: var(--_text);
+    font-size: 0.9em;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.05s ease-in-out;
+}
+
+.Post-body-text-content-link:hover {
+    color: var(--_tertiary);
+    text-decoration: underline;
+}

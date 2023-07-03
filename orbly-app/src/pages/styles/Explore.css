@@ -1,0 +1,12 @@
+.Explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 100dvh;
+    max-height: 100dvh;
+    background-color: var(--_page-background);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

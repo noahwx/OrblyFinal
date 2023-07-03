@@ -1,0 +1,122 @@
+.Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100%;
+    background-color: var(--_page-background);
+}
+
+.Login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25em;
+    height: 25em;
+    border-radius: 1em;
+    border: var(--_border);
+    background-color: var(--_page-background);
+    box-shadow: 0em 0em 1em var(--_shadow);
+}
+
+.Login-container-form-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20em;
+    height: 20em;
+}
+
+.Login-container-form-title {
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+    color: var(--_text);
+}
+
+.Login-container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login-container-form-input {
+    width: 100%;
+    height: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    border: var(--_border);
+    background-color: var(--_input-background);
+    color: var(--_text);
+}
+
+.Login-container-form-input:focus {
+    outline: none;
+    border: 1px solid var(--_primary);
+}
+
+.Login-container-form-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2em;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    border: none;
+    background-color: var(--_button);
+    color: var(--_button-text);
+}
+
+.Login-container-form-button:hover {
+    background-color: var(--_button-hover);
+    box-shadow: 0em 0em 10em var(--_shadow);
+}
+
+.Login-container-form-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.Login-container-form-links-link {
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--_text);
+}
+
+.Login-container-form-links-link:hover {
+    text-decoration: underline;
+}
+
+.Login-container-form-password-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 115%;
+}
+
+.Login-container-form-input-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 17em;
+    width: 1.2em;
+    height: 1.2em;
+}

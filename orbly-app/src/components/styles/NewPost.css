@@ -1,0 +1,463 @@
+.NewPost-unactive {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5em;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1em;
+    width: 100%;
+    height: 10em;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-image-active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1em;
+    width: 100%;
+    height: 20em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-gif-active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1em;
+    width: 100%;
+    height: 20em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-profile-image-unactive {
+    padding-left: 1em;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-profile-image-active {
+    padding-bottom: 4em;
+    padding-left: 0em;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-image-added-profile-image-active {
+    padding-bottom: 15em;
+    padding-left: 0em;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-profile-user-image {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+
+.NewPost-textarea-unactive {
+    margin-top: 1.5em;
+    padding-left: 1em;
+    padding-right: 6.5em;
+    width: 80%;
+    height: 1em;
+    font-size: 1em;
+    font-weight: 300;
+    background: none;
+    border: none;
+    resize: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-textarea-unactive[placeholder] {
+    color: var(--_placeholder);
+}
+
+.NewPost-textarea-unactive:focus {
+    outline: none;
+}
+
+.NewPost-textarea-active {
+    margin-top: -2em;
+    padding-left: 1em;
+    padding-right: 6.5em;
+    width: 80%;
+    min-height: 50px;
+    max-height: 90px;
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--_text);
+    background: none;
+    border: none;
+    resize: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-textarea-active[placeholder] {
+    color: var(--_placeholder);
+}
+
+.NewPost-textarea-active:focus {
+    outline: none;
+    color: var(--_text);
+}
+
+.NewPost-image-added-textarea-active {
+    margin-top: -13em;
+    padding-left: 1em;
+    padding-right: 6.5em;
+    width: 80%;
+    min-height: 50px;
+    max-height: 90px;
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--_text);
+    background: none;
+    border: none;
+    resize: none;
+    scrollbar-width: none; 
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-image-added-textarea-active[placeholder] {
+    color: var(--_placeholder);
+}
+
+.NewPost-image-added-textarea-active:focus {
+    outline: none;
+    color: var(--_text);
+}
+
+.NewPost-User-Post-unactive {
+    display: none;
+}
+
+.NewPost-User-Post-no-image-active {
+    display: none;
+}
+
+.NewPost-User-Post-active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 16em;
+    left: 33em;
+    max-width: 7%;
+    max-height: 7%;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-User-Post-delete-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 7%;
+    height: 7%;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-User-Post-delete-image-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -2.5em;
+    left: 0.2em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-color: var(--_page-background);
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-User-Post-delete-image-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.NewPost-User-Post-image-delete-tooltip {
+    position: absolute;
+    top: -1.5em;
+    left: 0.2em;
+    z-index: 1;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 0;
+}
+
+.NewPost-User-Post-delete-image:hover .NewPost-User-Post-image-delete-tooltip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -1.5em;
+    left: 0.2em;
+    z-index: 1;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 1;
+    color: var(--_tooltip-text);
+    background-color: var(--_tooltip-background);
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.NewPost-User-Post-image {
+    width: 100%;
+    height: 100%;
+}
+
+.NewPost-User-Post-gif {
+    width: 100%;
+    height: 100%;
+}
+
+.NewPost-actions-unactive {
+    display: none;
+}
+
+.NewPost-actions-active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 13em;
+    left: 33em;
+    width: 30%;
+    height: 2em;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-image-actions-active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 23em;
+    left: 33em;
+    width: 30%;
+    height: 2em;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-actions-profile-post-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 2em;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-actions-profile-post-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: var(--_page-background);
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-actions-profile-post-option-image {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.NewPost-actions-profile-post-option:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.NewPost-actions-profile-post-option-tooltip {
+    position: absolute;
+    top: -1.5em;
+    left: 0.2em;
+    z-index: 1;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 0;
+}
+
+.NewPost-actions-profile-post-option-tooltip-gif {
+    position: absolute;
+    top: -1.5em;
+    left: 3em;
+    z-index: 1;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 0;
+}
+
+.NewPost-actions-profile-post-option-image-added {
+    position: absolute;
+    top: 0.8em;
+    left: 2.5em;
+    z-index: 1;
+    font-size: 0.8em;
+    color: var(--_primary);
+}
+
+.NewPost-actions-profile-post-option:hover .NewPost-actions-profile-post-option-tooltip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -1.5em;
+    left: 0.2em;
+    z-index: 1;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 1;
+    color: var(--_tooltip-text);
+    border: none;
+    background-color: var(--_tooltip-background);
+    transition: all 0.5s ease-in-out;
+}
+
+.NewPost-actions-profile-post-option:hover .NewPost-actions-profile-post-option-tooltip-gif {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -1.5em;
+    left: 3em;
+    z-index: 1;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 1;
+    color: var(--_tooltip-text);
+    border: none;
+    background-color: var(--_tooltip-background);
+    transition: all 0.5s ease-in-out;
+}
+
+.NewPost-actions-progress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: -0.3em;
+    right: 0em;
+}
+
+.NewPost-actions-progress-circle-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    margin-right: -2em;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-actions-progress-circle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-actions-progress-circle-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: var(--_page-background);
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-actions-progress-count {
+    text-align: center;
+    padding: 0.5em;
+    width: 7em;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-char-count {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--_text);
+}
+
+.NewPost-button-unactive {
+    display: none;
+}
+
+.NewPost-button-active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -0.5em;
+    left: 27.5em;
+    z-index: 1;
+    width: 5em;
+    height: 2em;
+    border-radius: 1em;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--_text);
+    border: var(--_border);
+    background: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.NewPost-button-active:hover {
+    background: var(--_button-hover);
+}

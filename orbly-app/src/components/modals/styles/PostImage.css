@@ -1,0 +1,160 @@
+.PostImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: var(--_modal-page-background);
+}
+
+.PostImage-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30em;
+    height: 10em;
+    border-radius: 1em;
+    border: var(--_border);
+    background: var(--_modal-background);
+    box-shadow: var(--_shadow);
+}
+
+.PostImage-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.PostImage-modal-content-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 1em;
+    border-bottom: var(--_border);
+}
+
+.PostImage-modal-content-header-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 300;
+    width: 100%;
+    color: var(--_text);
+}
+
+.PostImage-modal-content-header-close {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 700;
+    padding-right: 1em;
+    color: var(--_text);
+    background: none;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.PostImage-modal-content-header-close:hover {
+    color: var(--_error);
+    cursor: pointer;
+}
+
+.PostImage-modal-content-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3em;
+}
+
+.PostImage-modal-content-body-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 1em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--_text);
+    border: var(--_border);
+    background: none;
+}
+
+.PostImage-modal-content-body-input:focus {
+    outline: none;
+}
+
+.PostImage-modal-content-body-input::placeholder {
+    color: var(--_placeholder);
+}
+
+.PostImage-modal-content-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 1em;
+}
+
+.PostImage-modal-content-footer-button-cancel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--_text);
+    border: var(--_border);
+    background: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.PostImage-modal-content-footer-button-cancel:hover {
+    background: var(--_button-hover);
+    color: var(--_button-text);
+    cursor: pointer;
+}
+
+.PostImage-modal-content-footer-button-post {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--_button-text);
+    border: var(--_border);
+    background: var(--_primary);
+    transition: all 0.2s ease-in-out;
+}
+
+.PostImage-modal-content-footer-button-post:hover {
+    background: var(--_button-hover);
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+.NotFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--_page_background);
+}
+
+.NotFound-header {
+    font-size: 10rem;
+    font-weight: 700;
+    color: var(--_primary);
+}
+
+.NotFound-subheader {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--_grey);
+}
+
+.NotFound-link {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--_primary);
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.NotFound-link:hover {
+    color: var(--_primary_hover);
+}

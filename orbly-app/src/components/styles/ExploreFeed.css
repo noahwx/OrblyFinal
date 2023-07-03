@@ -1,0 +1,125 @@
+.ExploreFeed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40%;
+    height: 100dvh;
+    border-left: var(--_border);
+    border-right: var(--_border);
+    background-color: var(--_page-background);
+    overflow: hidden;
+}
+
+.ExploreFeed-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 10%;
+    padding: 0 2rem;
+    border-bottom: var(--_border);
+}
+
+.ExploreFeed-search-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2em;
+    padding: 0.5em;
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 2em;
+    border: var(--_border);
+    outline: none;
+    color: var(--_text);
+    background-color: var(--_search-background);
+}
+
+.ExploreFeed-trending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 90%;
+    padding: 0 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.ExploreFeed-trending-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 5em;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    border-bottom: var(--_border);
+}
+
+.ExploreFeed-trending-header-text {
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--_text);
+}
+
+.ExploreFeed-trending-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    margin: 1em;
+}
+
+.ExploreFeed-trending-items-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.ExploreFeed-trending-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 5em;
+    margin-bottom: 1em;
+}
+
+.ExploreFeed-trending-item-number {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--_text);
+    padding-left: 1em;
+}
+
+.ExploreFeed-trending-link {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--_text);
+    padding-left: 1em;
+    text-decoration: none;
+}
+
+.ExploreFeed-trending-item-count {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--_grey);
+    padding-left: 1em;
+}

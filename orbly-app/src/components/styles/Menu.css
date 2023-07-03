@@ -1,0 +1,165 @@
+.Menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 15%;
+    z-index: 100;
+    background-color: var(--_page-background);
+    border-right: var(--_border);
+}
+
+.Menu-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 1em;
+    color: var(--_text);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.Menu-title:hover {
+    transform: scale(1.1);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    cursor: pointer;
+}
+
+.Menu-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.Menu-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0.2em;
+    margin-left: 0.5em;
+    padding: 0.5em;
+    border-radius: 1em;
+    color: var(--_text);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.Menu-link:hover {
+    background-color: var(--_hover);
+    cursor: pointer;
+}
+
+.Menu-link.active {
+    font-weight: 600;
+}
+
+.Menu-link-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Menu-link-text-image {
+    width: 1em;
+    height: 1em;
+    transition: all 0.2s ease-in-out;
+}
+
+.Menu-link:hover > .Menu-link-text-container > .Menu-link-text-image, .Menu-link:hover > .Menu-link-text-container > .Menu-link-text-image-profile {
+    transform: scale(1.2);
+}
+
+.Menu-link-text {
+    margin-left: 0.5em;
+}
+
+.Menu-link-text-image-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.Menu-settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5em;
+}
+
+.Menu-settings-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 1em;
+    color: var(--_text);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.Menu-settings-area:hover {
+    background-color: var(--_hover);
+    cursor: pointer;
+}
+
+.Menu-settings-area-icon-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.Menu-settings-area-text-text {
+    margin-top: 0.2em;
+    margin-left: 0.5em;
+    font-size: 1.2em;
+}
+
+.Menu-link-null {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -10em;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0.2em;
+    margin-left: 0.5em;
+    padding: 0.5em;
+    border-radius: 1em;
+    color: var(--_text);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.Menu-link-null:hover {
+    background-color: var(--_hover);
+    cursor: pointer;
+}
